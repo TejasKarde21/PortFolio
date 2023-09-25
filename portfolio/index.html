@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    
+<div id="header">
+
+ <div class="container">
+    <nav>
+        <img src="img/logo.png" alt="logoImg" class="logo">
+      <ul id="sidemenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+     
+    </nav>
+    <div class="header-text">
+        <p>FrontEnd Developer</p>
+        <h1>Hi, I'm <span>Tejas</span> <br> Karde From India</h1>
+    </div>
+ </div>
+
+</div> 
+           <!-- about sectioN -->
+<div id="about">
+      <div class="container">
+        <div class="row">
+            <div class="about-col-1"><img src="img/Tejas.png" alt=""></div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a recent B.Tech graduate with a background 
+                    in Agriculture Engineering from Dr. Panjabrao
+                     Deshmukh Krishi Vidyapeth, Akola. I am passionate
+                      about web development, particularly in the realm of
+                       UI design using HTML, CSS, and JavaScript.
+                        Currently, I am focused on expanding my 
+                        knowledge in React and am enrolled in a full-stack
+                         development course with Geektser.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+  
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI</span><br>Responsive Development</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>React Development</span><br> Basic React Development</li>
+                    </ul>
+                 </div>
+
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>GitHub Finder Project using html css javascript</li>
+                        <li><span>2023 - Current</span><br>Movie or Webseries Searching App get all description using html css, js. </li>
+                        <li><span>2023</span><br>UI of Various Website LighCode Bank , Furniture etc using Html, CSS, TelwindCss </li>
+                    </ul>
+                 </div>
+
+                 <div class="tab-contents" id="education"> 
+                    <ul>
+                        <li><span>2022</span><br>Software Developer Class Geekster</li>
+                        <li><span>2022</span><br>Btech from Dr.PDKV,Akola</li>
+                        <li><span>2017</span><br>12th from Yeshawant,Wardha </li>
+                        <li><span>2015</span><br>10th from Agragami,Wardha </li>
+                    </ul>
+                 </div>
+
+            </div>
+        </div>
+      </div>
+</div>
+
+<!-- ----------------services------------- -->
+   
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                 <h2>Web Design</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae repellendus quam, in reprehenderit voluptatem fuga debitis modi soluta illum numquam eos itaque amet mollitia aut eaque exercitationem? Laborum, ipsa.</p>
+                 <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae repellendus quam, in reprehenderit voluptatem fuga debitis modi soluta illum numquam eos itaque amet mollitia aut eaque exercitationem? Laborum, ipsa.</p>
+                    <a href="#">learn more</a>
+                   </div>
+                   <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae repellendus quam, in reprehenderit voluptatem fuga debitis modi soluta illum numquam eos itaque amet mollitia aut eaque exercitationem? Laborum, ipsa.</p>
+                    <a href="#">learn more</a>
+                   </div>
+        </div>
+    </div>
+</div>
+
+               <!-- -----------------portfolio-----------  -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+           <div class="work-list">
+            <div class="work">
+                <img src="img/Screenshot 2023-09-12 154644.png" alt="">
+                <div class="layer">
+                   <h3>Github Finder App</h3>
+                   <p>
+                      The app connects get pepole on github by knowing there name. 
+                   </p> 
+                   <a href="https://tejaskarde21.github.io/GitHubFinder/GithubFinderApiCall/index.htm"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/laptop.jpg" alt="">
+                <div class="layer">
+                    <h3>Movie App</h3>
+                    <p>
+                       The app is use to search any type of movie or series you want to see there Description. 
+                    </p> 
+                    <a href="https://tejaskarde21.github.io/MovieAPP/Movie/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="img/desk.jpg" alt="">
+                <div class="layer">
+                    <h3>Online Bank UI</h3>
+                    <p>
+                       The Website so userfriendly and attractive and impressive element in it. 
+                    </p> 
+                    <a href="https://tejaskarde21.github.io/LightCodeBank/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                 </div>
+            </div>
+           </div>
+            
+           <a href="seeMore.html" class="btn">See more</a>
+
+    </div>
+  </div>
+
+      <!-- ---------------------contact detail   -->
+    
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i><a href="mailto: tejaskarde21@gmail.com"> tejaskarde21@gmail.com</a></p>
+                  <p><i class="fa-solid fa-square-phone"></i> 8788799274</p>
+                  <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/TejasKarde21"><i class="fa-brands fa-github"></i></a>  
+                    <a href="www.linkedin.com/in/tejaskarde"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="documnet/Tejas_Resume_Up.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+     
+        <div class="copyright">
+            <p>Copyright © Tejas. Made Site 🧡 using Html css & Js  </p>
+        </div>
+    
+    </div>
+ 
+
+       
+</body>
+</html>
